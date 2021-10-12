@@ -33,7 +33,7 @@ class Contact extends React.Component{
       
       axios({
           method: 'POST',
-          url: 'http://localhost:2021/contactUs',
+          url: 'https://guarded-cliffs-31948.herokuapp.com/contactUs',
           headers: { 'Content-Type': 'application/json' },
           data: detailsObj
       })

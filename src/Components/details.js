@@ -78,7 +78,7 @@ class Details extends React.Component{
         
 
         axios({
-            url:`http://localhost:2021/restaurant/${restaurant}`,
+            url:`https://guarded-cliffs-31948.herokuapp.com/restaurant/${restaurant}`,
             method:'GET',
             headers:{'Content-Type' : 'application/json'},
         })
@@ -93,7 +93,7 @@ class Details extends React.Component{
         const {restaurantId}= this.state;
 
         axios({
-            url:`http://localhost:2021/menuitems/${restaurantId}`,
+            url:`https://guarded-cliffs-31948.herokuapp.com/menuitems/${restaurantId}`,
             method:'GET',
             headers:{'Content-Type' : 'application/json'},
         })
@@ -186,7 +186,7 @@ class Details extends React.Component{
     }
 
     getData = (data) => {
-        return fetch(`http://localhost:2021/payment`, {
+        return fetch(`https://guarded-cliffs-31948.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -233,7 +233,7 @@ class Details extends React.Component{
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/orders',
+            url: 'https://guarded-cliffs-31948.herokuapp.com/orders',
             headers: { 'Content-Type': 'application/json' },
             data: detailsObj
         })

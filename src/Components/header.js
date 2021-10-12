@@ -104,7 +104,7 @@ class Headers extends React.Component {
     };
     axios({
       method: 'POST',
-      url: 'http://localhost:2021/signup',
+      url: 'https://guarded-cliffs-31948.herokuapp.com/signup',
       headers: { 'Content-Type': 'application/json' },
       data: signUpObj
     })
@@ -139,7 +139,7 @@ class Headers extends React.Component {
     };
     axios({
       method: 'POST',
-      url: 'http://localhost:2021/login',
+      url: 'https://guarded-cliffs-31948.herokuapp.com/login',
       headers: { 'Content-Type': 'application/json' },
       data: loginObj
     })
@@ -205,7 +205,7 @@ class Headers extends React.Component {
     };
     axios({
       method: 'POST',
-      url: 'http://localhost:2021/login',
+      url: 'https://guarded-cliffs-31948.herokuapp.com/login',
       headers: { 'Content-Type': 'application/json' },
       data: signUpObj
     })
@@ -255,7 +255,7 @@ class Headers extends React.Component {
       email: email
     };
     axios({
-      url: `http://localhost:2021/previousOrders/${email}`,
+      url: `https://guarded-cliffs-31948.herokuapp.com/previousOrders/${email}`,
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
       data: filterObj

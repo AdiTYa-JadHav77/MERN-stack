@@ -17,7 +17,7 @@ class About extends react.Component{
         const {about}=this.state;
 
         axios({
-            url:'http://localhost:2021/aboutUs',
+            url:'https://guarded-cliffs-31948.herokuapp.com/aboutUs',
             method:'GET',
             headers:{'Content-Type' : 'application/json'}
         })
